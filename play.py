@@ -13,3 +13,9 @@ while True:
 
         if event.type == pygame.KEYDOWN:
             pass
+
+    background.render()
+    ground.render()
+
+    pygame.display.update()
+    FPS_CLOCK.tick(FPS)
