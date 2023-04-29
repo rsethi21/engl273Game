@@ -4,3 +4,5 @@ This is a game for my final project in Exploring Fiction based off of the gothic
 Game development tutorial: https://www.youtube.com/watch?v=Q-__8Xw9KTM
 
 Ideas: could you use NLP to allow users to input text and automatically generate an output from a NPC
+
+Maybe each script can be a different region of the game itself and can be called by main and take player as argument
