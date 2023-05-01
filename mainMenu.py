@@ -1,5 +1,5 @@
 import pygame
-from main import main
+from home import main
 import os
 
 # load images (creates surfaces)
