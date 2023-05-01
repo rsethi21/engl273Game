@@ -103,10 +103,11 @@ def main(WIN, finished=False):
     while run:
         clock.tick(FPS)  # monitors when to update physics
 
+        redraw_window(finish=finished)
+
         if door_1.clicked == True and door_2.clicked == True and door_3.clicked == True:
             finished = True
-        
-        redraw_window(finish=finished)
+            finished_count += 1
         
         if enemy2.health <= 0:
             finished = True
