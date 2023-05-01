@@ -10,6 +10,7 @@ homeScreen = pygame.transform.scale(homeScreen, (WIDTH, HEIGHT))
 
 def main_menu(WIN):
     FPS = 60
+    clock = pygame.time.Clock()
     WIDTH = WIN.get_width()
     HEIGHT = WIN.get_height()
     title_font = pygame.font.SysFont("comicsans", 50)
@@ -35,5 +36,6 @@ def main_menu(WIN):
         else:
             pygame.draw.rect(WIN, (100, 75, 0), [0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40, button_dimensions[0], button_dimensions[1]])
         WIN.blit(button, (0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40))
+        
         pygame.display.update()
     pygame.quit()
