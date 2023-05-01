@@ -15,4 +15,4 @@ def speech_bubble(WIN, text, pos):
   # draw
   pygame.draw.rect(WIN, (255,255,255), frame) # draw frame
   pygame.draw.rect(WIN, text_bubble, (0,0,0)) # superimpose box
-  WIN.blit(speech,texterap) # input text into box
+  WIN.blit(speech,text_wrap) # input text into box
