@@ -55,6 +55,7 @@ def main(lost=False):
     main_font = pygame.font.SysFont("comicsans", 20)
     item_font = pygame.font.SysFont("comicsans", 40)
     lost_font = pygame.font.SysFont("comicsans", 100)
+    finished = False
 
 
     enemy = Enemy(WIDTH - dracula.get_width(), HEIGHT - dracula.get_height(), dracula)  # dummy character create
@@ -67,8 +68,6 @@ def main(lost=False):
     door_1 = Button(240, 40, one, func1)
     door_2 = Button(0.5 * WIDTH - 0.5 * two.get_width(), 40, two, func2)
     door_3 = Button(740, 40, three, func3)
-    
-    door_1
     
     # # want to do one-two things well in gaming inside function (might want different functions for different
     # choices and call in different conditionals in loop
@@ -97,8 +96,12 @@ def main(lost=False):
     while run:
         clock.tick(FPS)  # monitors when to update physics
 
+        if door_1.clicked == True and door_2.clicked == True and door_3.clicked == True:
+            finished = True
+        
         redraw_window(loss=lost)
-
+        
+        
         if enemy2.health <= 0:
             lost = True
             lost_count += 1
