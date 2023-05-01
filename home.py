@@ -44,10 +44,10 @@ three = None
 
 # game loop function (allows interaction and changes in physics)
 
-def main():
+def main(lost=False):
     run = True
     FPS = 60  # checks physics 60 frames per second
-    lost = False
+    lost = lost
     lost_count = 0
     velocity_y = 5  # higher velocity for lower clock-speed; how many pixels moved per frame
     velocity_x = 8
@@ -68,6 +68,7 @@ def main():
     door_2 = Button(0.5 * WIDTH - 0.5 * two.get_width(), 40, two, func2)
     door_3 = Button(740, 40, three, func3)
     
+    door_1
     
     # # want to do one-two things well in gaming inside function (might want different functions for different
     # choices and call in different conditionals in loop
@@ -77,13 +78,14 @@ def main():
 
         # # plotting text
         WIN.blit(intro_text, (0.5 * WIDTH - 0.5 * intro_text.get_width(), 0))
-        door_1.draw(WIN)
-        door_2.draw(WIN)
-        door_3.draw(WIN)
 
         enemy.draw(WIN)  # dummy character draw everytime checking frames
         enemy2.draw(WIN)
-
+        
+        door_1.draw(WIN)
+        door_2.draw(WIN)
+        door_3.draw(WIN)
+        
         if loss:
             loss_label = lost_font.render("Game Over = (!", True, (255, 0, 0))
             WIN.blit(loss_label,
