@@ -17,15 +17,15 @@ from scienceLab import func3
 
 # game loop function (allows interaction and changes in physics)
 
-def main(WIN, finished=False):
+def main(WIN):
 
     pygame.font.init()
 
     WIDTH = WIN.get_width()
     HEIGHT = WIN.get_height()
     run = True
-    FPS = 60  # checks physics 60 frames per second
-    finished = finished
+    FPS = 15  # checks physics 60 frames per second
+    finished = False
     finished_count = 0
     velocity_y = 5  # higher velocity for lower clock-speed; how many pixels moved per frame
     velocity_x = 8
@@ -71,9 +71,9 @@ def main(WIN, finished=False):
 
     clock = pygame.time.Clock()  # keeps track of time of game
     
-    door_1 = Button(200, 40, one, func1)
-    door_2 = Button(0.5 * WIDTH - 0.5 * two.get_width(), 40, two, func2)
-    door_3 = Button(700, 40, three, func3)
+    door_1 = Button(200, 40, one)
+    door_2 = Button(0.5 * WIDTH - 0.5 * two.get_width(), 40, two)
+    door_3 = Button(700, 40, three)
     
     # # want to do one-two things well in gaming inside function (might want different functions for different
     # choices and call in different conditionals in loop
@@ -88,9 +88,9 @@ def main(WIN, finished=False):
         enemy.draw(WIN)  # dummy character draw everytime checking frames
         enemy2.draw(WIN)
         
-        door_1.draw(WIN)
-        door_2.draw(WIN)
-        door_3.draw(WIN)
+        door_1.draw(WIN, func1)
+        door_2.draw(WIN, func2)
+        door_3.draw(WIN, func3)
         
         if finish:
             finished_label = end_font.render("To be continued...?!?", True, (255, 0, 0))

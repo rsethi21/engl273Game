@@ -1,5 +1,6 @@
 import pygame
 from home import main
+from backStory import story
 import os
 from button import Button
 
@@ -11,7 +12,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("A game dedicated to gothic texts")
 
 def main_menu():
-    FPS = 60
+    FPS = 15
     clock = pygame.time.Clock()
     title_font = pygame.font.SysFont("comicsans", 50)
     run = True
@@ -33,8 +34,8 @@ def main_menu():
         title = title_font.render("Click play key to begin...", True, (255, 0, 0))
         WIN.blit(title, (0.5 * WIDTH - 0.5 * title.get_width(), 0.5 * HEIGHT - 0.5 * title.get_height()))
 
-        button = Button(0.5 * WIDTH - 0.5 * play.get_width(), 0.5 * HEIGHT - 0.5 * play.get_height() + 75, play, main, WIN)
-        button.draw(WIN)
+        button = Button(0.5 * WIDTH - 0.5 * play.get_width(), 0.5 * HEIGHT - 0.5 * play.get_height() + 75, play)
+        button.draw(WIN, story)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

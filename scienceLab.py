@@ -1,4 +1,4 @@
 import pygame
 
-def func3():
+def func3(WIN):
     return
