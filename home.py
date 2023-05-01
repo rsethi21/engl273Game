@@ -34,13 +34,16 @@ frankenstein = pygame.transform.scale(frankenstein, (WIDTH / 4, HEIGHT / 1.25))
 spawnBats = pygame.image.load(os.path.join(imgDir, "batspower.png"))
 spawnBats = pygame.transform.scale(spawnBats, (dracula.get_width() * 2, dracula.get_height()))
 
+# # Button images
+one = None
+two = None
+three = None
 
 # game loop function (allows interaction and changes in physics)
 
 def main():
     run = True
     FPS = 60  # checks physics 60 frames per second
-    lives = 5
     lost = False
     lost_count = 0
     velocity_y = 5  # higher velocity for lower clock-speed; how many pixels moved per frame
@@ -57,21 +60,22 @@ def main():
     enemy2 = Player(10, HEIGHT - frankenstein.get_height(), frankenstein)
 
     clock = pygame.time.Clock()  # keeps track of time of game
-
+    
+    door_1 = Button(240, 40, one)
+    
+    
     # # want to do one-two things well in gaming inside function (might want different functions for different
     # choices and call in different conditionals in loop
     def redraw_window(loss):
         # # created background
         WIN.blit(doorImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
         # # created text
-        lives_label = main_font.render(f"Lives Left: {lives}", True, (255, 0, 0))  # RGB format tuple
         intro_text = item_font.render("Pick a Door", True, (255, 250, 250))
         door_1 = item_font.render("1", True, (255, 250, 250))
         door_2 = item_font.render("2", True, (255, 250, 250))
         door_3 = item_font.render("3", True, (255, 250, 250))
 
         # # plotting text
-        WIN.blit(lives_label, (0, 0))
         WIN.blit(intro_text, (0.5 * WIDTH - 0.5 * intro_text.get_width(), 0))
         WIN.blit(door_1, (240, 40))
         WIN.blit(door_2, (0.5 * WIDTH - 0.5 * door_2.get_width(), 40))  # attempt at programmatic sense
@@ -93,7 +97,7 @@ def main():
 
         redraw_window(loss=lost)
 
-        if lives <= 0:
+        if enemy2.health <= 0:
             lost = True
             lost_count += 1
 
