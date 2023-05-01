@@ -1,5 +1,6 @@
 import pygame
 from main import main
+import os
 
 # load images (creates surfaces)
 imgDir = "gameImages"
@@ -8,12 +9,14 @@ homeScreen = pygame.image.load(os.path.join(imgDir, "BG.jpg"))
 homeScreen = pygame.transform.scale(homeScreen, (WIDTH, HEIGHT))
 
 def main_menu(WIN):
+    FPS = 60
     WIDTH = WIN.get_width()
     HEIGHT = WIN.get_height()
     title_font = pygame.font.SysFont("comicsans", 50)
     button_font = pygame.font.SysFont("comicsans", 20)
     run = True
     while run:
+        clock.tick(FPS)
         WIN.blit(homeScreen, (0,0))
         title = title_font.render("Click play key to begin...", True, (255, 0, 0))
         button = button_font.render("Play", True, (255, 255, 255))
