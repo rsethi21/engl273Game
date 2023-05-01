@@ -150,8 +150,11 @@ def main_menu():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if 0.5 * WIDTH - 0.5 * button.get_width() <= mouse[0] <= 0.5 * WIDTH - 0.5 * button.get_width() + button_dimensions[0] and 0.5 * HEIGHT - 0.5 * button.get_height() + 40 <= mouse[1] <= 0.5 * HEIGHT - 0.5 * button.get_height() + 40 + button_dimensions[1]:
                     main()
-
-        pygame.draw.rect(WIN, (255, 0, 0), [0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40, button_dimensions[0], button_dimensions[1]])
+        
+        if 0.5 * WIDTH - 0.5 * button.get_width() <= mouse[0] <= 0.5 * WIDTH - 0.5 * button.get_width() + button_dimensions[0] and 0.5 * HEIGHT - 0.5 * button.get_height() + 40 <= mouse[1] <= 0.5 * HEIGHT - 0.5 * button.get_height() + 40 + button_dimensions[1]:
+            pygame.draw.rect(WIN, (255, 0, 0), [0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40, button_dimensions[0], button_dimensions[1]])
+        else:
+            pygame.draw.rect(WIN, (100, 0, 0), [0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40, button_dimensions[0], button_dimensions[1]])
         WIN.blit(button, (0.5 * WIDTH - 0.5 * button.get_width(), 0.5 * HEIGHT - 0.5 * button.get_height() + 40))
 
         pygame.display.update()
