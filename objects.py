@@ -1,5 +1,6 @@
 import pygame
 import random
+from dialogue import speech
 
 
 def collide(obj1, obj2):
