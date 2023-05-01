@@ -5,6 +5,7 @@ import sys
 from objects import Player, Enemy, Power
 import time
 import random
+from button import Button
 
 pygame.font.init()
 
