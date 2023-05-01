@@ -6,6 +6,9 @@ from objects import Player, Enemy, Power
 import time
 import random
 from button import Button
+from dungeon import func2
+from bedroom import func1
+from scienceLab import func3
 
 pygame.font.init()
 
@@ -61,7 +64,9 @@ def main():
 
     clock = pygame.time.Clock()  # keeps track of time of game
     
-    door_1 = Button(240, 40, one)
+    door_1 = Button(240, 40, one, func1)
+    door_2 = Button(0.5 * WIDTH - 0.5 * two.get_width(), 40, two, func2)
+    door_3 = Button(740, 40, three, func3)
     
     
     # # want to do one-two things well in gaming inside function (might want different functions for different
@@ -69,17 +74,12 @@ def main():
     def redraw_window(loss):
         # # created background
         WIN.blit(doorImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
-        # # created text
-        intro_text = item_font.render("Pick a Door", True, (255, 250, 250))
-        door_1 = item_font.render("1", True, (255, 250, 250))
-        door_2 = item_font.render("2", True, (255, 250, 250))
-        door_3 = item_font.render("3", True, (255, 250, 250))
 
         # # plotting text
         WIN.blit(intro_text, (0.5 * WIDTH - 0.5 * intro_text.get_width(), 0))
-        WIN.blit(door_1, (240, 40))
-        WIN.blit(door_2, (0.5 * WIDTH - 0.5 * door_2.get_width(), 40))  # attempt at programmatic sense
-        WIN.blit(door_3, (740, 40))
+        door_1.draw(WIN)
+        door_2.draw(WIN)
+        door_3.draw(WIN)
 
         enemy.draw(WIN)  # dummy character draw everytime checking frames
         enemy2.draw(WIN)
