@@ -1,6 +1,6 @@
 import pygame
 import random
-from dialogue import speech_bubble
+
 
 
 def collide(obj1, obj2):
