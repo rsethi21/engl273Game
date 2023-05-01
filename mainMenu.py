@@ -1,9 +1,15 @@
 import pygame
+from main import main
 
+# load images (creates surfaces)
+imgDir = "gameImages"
+# # background images
 homeScreen = pygame.image.load(os.path.join(imgDir, "BG.jpg"))
 homeScreen = pygame.transform.scale(homeScreen, (WIDTH, HEIGHT))
 
-def main_menu():
+def main_menu(WIN):
+    WIDTH = WIN.get_width()
+    HEIGHT = WIN.get_height()
     title_font = pygame.font.SysFont("comicsans", 50)
     button_font = pygame.font.SysFont("comicsans", 20)
     run = True
