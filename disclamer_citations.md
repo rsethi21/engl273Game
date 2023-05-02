@@ -25,23 +25,23 @@ This game is created for eudcational purposes only and will not be commercialize
 # Characters:
 - AI Robot:
   - Link: https://www.freepik.com/free-vector/robot-android-female-realistic-3d-composition-humanoid-robot-with-feminine-body-blank_6862965.htm#query=ai%20humanoid%20animated&position=3&from_view=search&track=ais
-  - Attribution:
+  - Attribution: <a href="https://www.freepik.com/free-vector/robot-android-female-realistic-3d-composition-humanoid-robot-with-feminine-body-blank_6862965.htm#query=ai%20humanoid%20animated&position=3&from_view=search&track=ais">Image by macrovector</a> on Freepik
 
 - Dracula:
   - Link: https://www.freepik.com/free-vector/three-vampire-characters_1321048.htm#query=animated%20game%20dracula&position=35&from_view=search&track=ais
-  - Attribution:
+  - Attribution: Image by <a href="https://www.freepik.com/free-vector/three-vampire-characters_1321048.htm#query=animated%20game%20dracula&position=35&from_view=search&track=ais">Freepik</a>
 
 - Suspicious Butler:
   - Link: https://www.freepik.com/free-vector/man-wearing-smoking-background_1005334.htm#query=animated%20suspicious%20butler&position=1&from_view=search&track=ais
-  - Attribution
+  - Attribution: <a href="https://www.freepik.com/free-vector/man-wearing-smoking-background_1005334.htm#query=animated%20suspicious%20butler&position=1&from_view=search&track=ais">Image by macrovector</a> on Freepik
 
 - Avatars:
   - Link: https://www.freepik.com/free-vector/funny-pixelated-character_834581.htm#query=video%20game%20character%20choices&position=14&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/funny-pixelated-character_834581.htm#query=video%20game%20character%20choices&position=14&from_view=search&track=ais">Image by alekksall</a> on Freepik
 
 - Frankenstein:
   - Link: https://www.freepik.com/free-vector/three-nice-hand-drawn-halloween-characters_1316419.htm#page=2&query=frankenstein%20animated&position=13&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: Image by <a href="https://www.freepik.com/free-vector/three-nice-hand-drawn-halloween-characters_1316419.htm#page=2&query=frankenstein%20animated&position=13&from_view=search&track=ais">Freepik</a>
 
 # Powers
 - Bats:
