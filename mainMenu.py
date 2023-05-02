@@ -12,7 +12,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("A game dedicated to gothic texts")
 
 def main_menu():
-    FPS = 15
+    FPS = 60
     clock = pygame.time.Clock()
     title_font = pygame.font.SysFont("comicsans", 50)
     run = True
@@ -23,6 +23,7 @@ def main_menu():
     homeScreen = pygame.image.load(os.path.join(imgDir, "BG.jpg"))
     homeScreen = pygame.transform.scale(homeScreen, (WIDTH, HEIGHT))
 
+
     # # play button
     play = pygame.image.load(os.path.join(imgDir, "play.png"))
     play = pygame.transform.scale(play, (WIDTH / 4, HEIGHT / 8))
@@ -30,7 +31,6 @@ def main_menu():
     while run:
         clock.tick(FPS)
         WIN.blit(homeScreen, (0,0))
-
         title = title_font.render("Click play key to begin...", True, (255, 0, 0))
         WIN.blit(title, (0.5 * WIDTH - 0.5 * title.get_width(), 0.5 * HEIGHT - 0.5 * title.get_height()))
 

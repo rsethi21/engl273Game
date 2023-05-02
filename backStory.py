@@ -18,6 +18,7 @@ def story(WIN):
     WIDTH = WIN.get_width()
     HEIGHT = WIN.get_height()
     imgDir = "gameImages"
+    title_font = pygame.font.SysFont("comicsans", 40)
 
     # load images
     doorImage = pygame.image.load(os.path.join(imgDir, "doors.jpg"))
@@ -25,43 +26,38 @@ def story(WIN):
     butlerImage = pygame.image.load(os.path.join(imgDir, "butler.png"))
     butlerImage = pygame.transform.scale(butlerImage, (WIDTH/3, HEIGHT/1.5))
     nextImage = pygame.image.load(os.path.join(imgDir, "next.png"))
-    nextImage = pygame.transform.scale(nextImage, (WIDTH / 4, HEIGHT / 8))
+    nextImage = pygame.transform.scale(nextImage, (WIDTH / 5, HEIGHT / 9))
 
     choiceOne = pygame.image.load(os.path.join(imgDir, "choice1.png"))
-    choiceOne = pygame.transform.scale(choiceOne, (WIDTH / 4, HEIGHT / 2))
+    choiceOne = pygame.transform.scale(choiceOne, (WIDTH/5, HEIGHT/1.5))
     choiceTwo = pygame.image.load(os.path.join(imgDir, "choice2.png"))
-    choiceTwo = pygame.transform.scale(choiceTwo, (WIDTH / 4, HEIGHT / 2))
+    choiceTwo = pygame.transform.scale(choiceTwo, (WIDTH/5, HEIGHT/1.5))
     choiceThree = pygame.image.load(os.path.join(imgDir, "choice3.png"))
-    choiceThree = pygame.transform.scale(choiceThree, (WIDTH / 4, HEIGHT / 2))
+    choiceThree = pygame.transform.scale(choiceThree, (WIDTH/5, HEIGHT/1.5))
     choiceFour = pygame.image.load(os.path.join(imgDir, "choice4.png"))
-    choiceFour = pygame.transform.scale(choiceFour, (WIDTH / 4, HEIGHT / 2))
+    choiceFour = pygame.transform.scale(choiceFour, (WIDTH/5, HEIGHT/1.5))
 
     # dialogue
     index = 0
-    first = Speech("Welcome to Castle Virtula detective! We are in dire need of your services.")
-    second = Speech("Monsters have infested the castle and we need your gifts to hunt these monsters down!")
-    third = Speech("You must be careful though, as these creatures are deceptive and may say some untrue things, such as not to trust me!")
-    fourth = Speech("Once inside, you must fight all the monsters in order to escape!")
-    fifth = Speech("Once you are weak enoug...hehe...I mean successful, you will be paid handsomely. Good luck! You'll need it")
-    dialogueList = [first, second, third, fourth, fifth]
+    first = Speech("Welcome to Castle Virtula detective! We need your services.")
+    second = Speech("Monsters have infested the castle and you must fight them!")
+    third = Speech("These creatures are deceptive and may say some untrue things.")
+    fourth = Speech("... such as not to trust me!")
+    fifth = Speech("Once you are weak enough...I mean successful,")
+    sixth = Speech("you will be paid handsomely. Good luck! You'll need it")
+    dialogueList = [first, second, third, fourth, fifth, sixth]
 
     # create necessary objects
-    option2 = Button(0.5*WIDTH-choiceTwo.get_width(), HEIGHT-choiceTwo.get_height(), choiceTwo)
+    option2 = Button(0.5*WIDTH-choiceTwo.get_width(), HEIGHT-choiceTwo.get_height()+10, choiceTwo)
     option3 = Button(0.5*WIDTH, HEIGHT-choiceThree.get_height(), choiceThree)
-    option1 = Button(option2.x-choiceOne.get_width(), HEIGHT-choiceOne.get_height(), choiceOne)
-    option4 = Button(option3.x+choiceThree.get_width(), HEIGHT-choiceFour.get_height(), choiceFour)
-    nextButton = Button(WIDTH - nextImage.get_width(), HEIGHT - nextImage.get_height(), nextImage)
+    option1 = Button(option2.x-choiceTwo.get_width(), HEIGHT-choiceOne.get_height(), choiceOne)
+    option4 = Button(option3.x+choiceThree.get_width(), HEIGHT-choiceFour.get_height()+10, choiceFour)
+    nextButton = Button(WIDTH - nextImage.get_width(), 0, nextImage)
 
-    # dummy function for button to work; may need to change in the future
-    def redraw_window(window, speechIndex, pos):
-        print(speechIndex)
-        return
-
-    def pick_avatar(window, x, y, img):
-        # display pick and avatar text
-        # create player object
-        # call main function
-        return
+    player1 = Player(10, HEIGHT - option1.image.get_height(), option1.image)
+    player2 = Player(10, HEIGHT - option2.image.get_height(), option2.image)
+    player3 = Player(10, HEIGHT - option3.image.get_height(), option3.image)
+    player4 = Player(10, HEIGHT - option4.image.get_height(), option3.image)
 
 
     while run:
@@ -84,12 +80,43 @@ def story(WIN):
                 index += 1
                 nextButton.clicked = False
             else:
-                nextButton.draw(WIN, redraw_window, index, (WIDTH - butlerImage.get_width(), HEIGHT - butlerImage.get_height()))
+                nextButton.draw(WIN)
 
         elif index == len(dialogueList):
             # draw character buttons
             # call pick avatar to make player and call main
             # call end story
+
+            WIN.blit(doorImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
+
+            intro_text = title_font.render("Pick an Avatar", True, (255, 250, 250))
+            WIN.blit(intro_text, (0.5 * WIDTH - 0.5 * intro_text.get_width(), 0))
+
+            if option1.clicked:
+                index += 1
+                main(WIN, player1)
+            else:
+                option1.draw(WIN)
+
+            if option2.clicked:
+                index += 1
+                main(WIN, player2)
+            else:
+                option2.draw(WIN)
+
+            if option3.clicked:
+                index += 1
+                main(WIN, player3)
+            else:
+                option3.draw(WIN)
+
+            if option4.clicked:
+                index += 1
+                main(WIN, player4)
+            else:
+                option4.draw(WIN)
+
+        else:
             run = False
 
         pygame.display.update()

@@ -8,7 +8,7 @@ class Button:
         self.y = y
         self.clicked = False
         self.cooldown = 0
-        self.waitframes = 60
+        self.waitframes = 45
 
     def cool_down(self):
         if self.cooldown >= self.waitframes:
@@ -16,7 +16,7 @@ class Button:
         elif self.cooldown > 0:
             self.cooldown += 1
 
-    def draw(self, WIN, func, *args):
+    def draw(self, WIN, func=None, *args):
 
         pos = pygame.mouse.get_pos()
         if self.x <= pos[0] <= self.x + self.image.get_width() and self.y <= pos[1] <= self.y + self.image.get_height():
@@ -26,7 +26,8 @@ class Button:
             WIN.blit(img, (self.x, self.y))
 
             if pygame.mouse.get_pressed()[0] and self.clicked is False and self.cooldown == 0:
-                func(WIN, *args)
+                if func != None:
+                    func(WIN, *args)
                 self.clicked = True
                 self.cooldown = 1
         else:

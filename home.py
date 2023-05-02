@@ -17,14 +17,14 @@ from scienceLab import func3
 
 # game loop function (allows interaction and changes in physics)
 
-def main(WIN):
+def main(WIN, player):
 
     pygame.font.init()
 
     WIDTH = WIN.get_width()
     HEIGHT = WIN.get_height()
     run = True
-    FPS = 15  # checks physics 60 frames per second
+    FPS = 60  # checks physics 60 frames per second
     finished = False
     finished_count = 0
     velocity_y = 5  # higher velocity for lower clock-speed; how many pixels moved per frame
