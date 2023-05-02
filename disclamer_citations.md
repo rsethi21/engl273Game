@@ -12,15 +12,15 @@ This game is created for eudcational purposes only and will not be commercialize
 
 - Main Background Page:
   - Link: https://www.freepik.com/free-vector/flat-design-halloween-background_9701012.htm#query=gothic%20background%20animated&position=7&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: Image by <a href="https://www.freepik.com/free-vector/flat-design-halloween-background_9701012.htm#query=gothic%20background%20animated&position=7&from_view=search&track=ais">Freepik</a>
 
 - Science Lab:
   - Link: https://www.freepik.com/free-vector/science-laboratory-room-chemical-experiments_27176442.htm#query=science%20lab&position=1&from_view=search&track=ais
-  - Attribution:
+  - Attribution: <a href="https://www.freepik.com/free-vector/science-laboratory-room-chemical-experiments_27176442.htm#query=science%20lab&position=1&from_view=search&track=ais">Image by brgfx</a> on Freepik
 
 - Outdoor:
   - Link: https://www.freepik.com/free-vector/river-with-rocky-shore-trees-night_25726625.htm#query=dark%20clouds%20animated&position=32&from_view=search&track=ais
-  - Attribution:
+  - Attribution: <a href="https://www.freepik.com/free-vector/river-with-rocky-shore-trees-night_25726625.htm#query=dark%20clouds%20animated&position=32&from_view=search&track=ais">Image by upklyak</a> on Freepik
 
 # Characters:
 - AI Robot:
