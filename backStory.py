@@ -29,7 +29,7 @@ def story(WIN):
     nextImage = pygame.transform.scale(nextImage, (WIDTH / 5, HEIGHT / 9))
 
     choiceOne = pygame.image.load(os.path.join(imgDir, "choice1.png"))
-    choiceOne = pygame.transform.scale(choiceOne, (WIDTH/5, HEIGHT/1.5))
+    choiceOne = pygame.transform.scale(choiceOne, (WIDTH/4, HEIGHT/1.5))
     choiceTwo = pygame.image.load(os.path.join(imgDir, "choice2.png"))
     choiceTwo = pygame.transform.scale(choiceTwo, (WIDTH/5, HEIGHT/1.5))
     choiceThree = pygame.image.load(os.path.join(imgDir, "choice3.png"))
