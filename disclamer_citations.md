@@ -95,19 +95,19 @@ This game is created for eudcational purposes only and will not be commercialize
 # Buttons
 - Choice Buttons:
   - Link: https://www.freepik.com/free-vector/set-8-orange-buttons_1128298.htm#query=blank%20buttons%20game&position=0&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/set-8-orange-buttons_1128298.htm#query=blank%20buttons%20game&position=0&from_view=search&track=ais">Image by ibrandify</a> on Freepik
 
 - Play Button:
   - Link: https://www.freepik.com/free-vector/realistic-neon-call-action-button-collection_13862972.htm#query=play%20video%20games%20button%20rectangle&position=16&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/realistic-neon-call-action-button-collection_13862972.htm#query=play%20video%20games%20button%20rectangle&position=16&from_view=search&track=ais">Image by pikisuperstar</a> on Freepik
 
 - Number Buttons:
   - Link: https://www.freepik.com/free-vector/abstract-infographic-template-with-options_1001496.htm#query=number%20buttons%20dark&position=3&from_view=search&track=ais
-  - Attribution
+  - Attribution: Image by <a href="https://www.freepik.com/free-vector/abstract-infographic-template-with-options_1001496.htm#query=number%20buttons%20dark&position=3&from_view=search&track=ais">Freepik</a>
 
 - Next Button:
   - Link: https://www.freepik.com/free-vector/design-complete-set-level-button-game-pop-up_14245164.htm#query=next%20button%20game&position=27&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/design-complete-set-level-button-game-pop-up_14245164.htm#query=next%20button%20game&position=27&from_view=search&track=ais">Image by jcomp</a> on Freepik
 
 # Remove background link:
 - Link: https://www.remove.bg/upload
