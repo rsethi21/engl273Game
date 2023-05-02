@@ -1,5 +1,5 @@
 # Description:
-This game is created for eudcational purposes only and will not be commercialized, thus the game falls under the educational fair use exception disclamer (listed in the github as a file). Below are citations of free images that have associated attributions. This game was created to summarize the gothic literature examined throughout Loyola University Chicago's Exploring Fiction Course (ENGL 273).
+This game is created for eudcational purposes only and will not be commercialized, thus the game falls under the educational fair use exception disclamer. Below are citations of free images that have associated attributions. This game was created to summarize the gothic literature examined throughout Loyola University Chicago's Exploring Fiction Course (ENGL 273).
 
 # Background Images:
 - Bedroom:
