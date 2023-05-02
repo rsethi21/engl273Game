@@ -22,7 +22,7 @@ def main(WIN, player):
     finished_count = 0
     velocity_y = 5  # higher velocity for lower clock-speed; how many pixels moved per frame
     velocity_x = 8
-    item_font = pygame.font.SysFont("comicsans", 40)
+    lives_font = pygame.font.SysFont("comicsans", 40)
     end_font = pygame.font.SysFont("comicsans", 100)
 
     # load images (creates surfaces)
@@ -49,14 +49,15 @@ def main(WIN, player):
         # # created background
         WIN.blit(doorImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
         player.draw(WIN)
-
-        # # plotting text
-        intro_text = item_font.render("Pick a Door", True, (255, 250, 250))
+        intro_text = lives_font.render("Pick a Door", True, (255, 250, 250))
         WIN.blit(intro_text, (0.5 * WIDTH - 0.5 * intro_text.get_width(), 0))
 
-        door_1.draw(WIN, func1)
-        door_2.draw(WIN, func2)
-        door_3.draw(WIN, func3)
+        door_1.draw(WIN, func1, player)
+        door_2.draw(WIN, func2, player)
+        door_3.draw(WIN, func3, player)
+
+        lives_label = lives_font.render(f"Lives: {player.lives}", True, (255, 0,0))
+        WIN.blit(lives_label, (0, 0))
 
         if finish:
             finished_label = end_font.render("To be continued...?!?", True, (255, 0, 0))
@@ -72,6 +73,10 @@ def main(WIN, player):
         redraw_window(finish=finished)
 
         if door_1.clicked == True and door_2.clicked == True and door_3.clicked == True:
+            finished = True
+            finished_count += 1
+
+        if player.lives == 0:
             finished = True
             finished_count += 1
 

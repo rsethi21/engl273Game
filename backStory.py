@@ -48,16 +48,16 @@ def story(WIN):
     dialogueList = [first, second, third, fourth, fifth, sixth]
 
     # create necessary objects
-    option2 = Button(0.5*WIDTH-choiceTwo.get_width(), HEIGHT-choiceTwo.get_height()+10, choiceTwo)
+    option2 = Button(0.5*WIDTH-choiceTwo.get_width(), HEIGHT-choiceTwo.get_height()+20, choiceTwo)
     option3 = Button(0.5*WIDTH, HEIGHT-choiceThree.get_height(), choiceThree)
     option1 = Button(option2.x-choiceTwo.get_width(), HEIGHT-choiceOne.get_height(), choiceOne)
-    option4 = Button(option3.x+choiceThree.get_width(), HEIGHT-choiceFour.get_height()+10, choiceFour)
+    option4 = Button(option3.x+choiceThree.get_width(), HEIGHT-choiceFour.get_height()+20, choiceFour)
     nextButton = Button(WIDTH - nextImage.get_width(), 0, nextImage)
 
     player1 = Player(10, HEIGHT - option1.image.get_height(), option1.image)
     player2 = Player(10, HEIGHT - option2.image.get_height(), option2.image)
     player3 = Player(10, HEIGHT - option3.image.get_height(), option3.image)
-    player4 = Player(10, HEIGHT - option4.image.get_height(), option3.image)
+    player4 = Player(10, HEIGHT - option4.image.get_height(), option4.image)
 
 
     while run:

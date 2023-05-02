@@ -12,7 +12,7 @@ def collide(obj1, obj2):
 # create character class that can be used for multiple things like enemy and player
 class Character:
 
-    def __init__(self, x, y, img, powerList=None, health=100):
+    def __init__(self, x, y, img, powerList=None, health=100, lives=2):
         self.x = x
         self.y = y
         self.health = health
@@ -23,6 +23,7 @@ class Character:
         self.mask = pygame.mask.from_surface(self.img)
         self.shield = 3
         self.dodge = 3
+        self.lives = lives
 
     def draw(self, window):
         # pygame.draw.rect(window, (255, 0, 0), (self.x, self.y, 50, 50), 10)  # test object
@@ -36,14 +37,28 @@ class Character:
         pygame.draw.rect(window, (255, 0, 0), (self.x, self.y + 4, self.img.get_width(), 10))
         pygame.draw.rect(window, (0, 255, 0), (self.x, self.y + 4, self.img.get_width() * percentHealth, 10))
 class Player(Character):
-    def __int__(self, x, y, img, powerList=None, health=100):
-        super().__init__(x, y, img, powerList=powerList, health=health)
+    def __int__(self, x, y, img, powerList=None, health=100, lives=2):
+        super().__init__(x, y, img, powerList=powerList, health=health, lives=lives)
         # self.mask = pygame.mask.from_surface(self.img)
+
+    def shoot(self, option):
+        p = self.powers[option]
+        p.x = self.x
+        p.y = self.y
+        self.currentpower = p
+
+    def movePower(self, vel_x, width, obj):
+        self.currentpower.move(vel_x)
+        if self.currentpower.off_screen(width):
+            self.currentpower = None
+        elif self.currentpower.collision(obj):
+            obj.health -= self.currentpower.damage
+            self.currentpower = None
 
 
 class Enemy(Character):
-    def __init__(self, x, y, img, powerList=None, health=100):
-        super().__init__(x, y, img, powerList=powerList, health=health)
+    def __init__(self, x, y, img, powerList=None, health=100, lives=2):
+        super().__init__(x, y, img, powerList=powerList, health=health, lives=lives)
         # self.mask = pygame.mask.from_surface(self.img)  # creates mask to create collisions perfect since only pixel
         # # areas
 
