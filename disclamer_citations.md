@@ -8,7 +8,7 @@ This game is created for eudcational purposes only and will not be commercialize
 
 - Doors:
   - Link: https://www.freepik.com/free-vector/medieval-wooden-doors-stone-arch-old-house-castle-church-vector-cartoon-illustration-ancient-interior-with-brick-wall-wood-gates-with-golden-handle-hinges_22694628.htm#query=multiple%20doors%20animated%20dark&position=12&from_view=search&track=robertav1_2_sidr
-  - Attribution:
+  - Attribution: <a href="https://www.freepik.com/free-vector/medieval-wooden-doors-stone-arch-old-house-castle-church-vector-cartoon-illustration-ancient-interior-with-brick-wall-wood-gates-with-golden-handle-hinges_22694628.htm#query=multiple%20doors%20animated%20dark&position=12&from_view=search&track=robertav1_2_sidr">Image by upklyak</a> on Freepik
 
 - Main Background Page:
   - Link: https://www.freepik.com/free-vector/flat-design-halloween-background_9701012.htm#query=gothic%20background%20animated&position=7&from_view=search&track=ais
