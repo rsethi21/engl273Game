@@ -5,7 +5,7 @@ from objects import Enemy, Power
 import os
 
 
-def func1(WIN, player):
+def func2(WIN, player):
     pygame.font.init()
 
     WIDTH = WIN.get_width()
@@ -29,25 +29,25 @@ def func1(WIN, player):
     # load images (creates surfaces)
     imgDir = "gameImages"
     # # background images
-    bedroomImage = pygame.image.load(os.path.join(imgDir, "bedroom.jpg"))
-    bedroomImage = pygame.transform.scale(bedroomImage, (WIDTH, HEIGHT))
+    outdoorImage = pygame.image.load(os.path.join(imgDir, "outdoors.jpg"))
+    outdoorImage = pygame.transform.scale(outdoorImage, (WIDTH, HEIGHT))
 
     # # characters
-    dracula = pygame.image.load(os.path.join(imgDir, "dracula.png"))
-    dracula = pygame.transform.scale(dracula, (WIDTH / 4, HEIGHT / 1.8))
+    frankenstein = pygame.image.load(os.path.join(imgDir, "frankenstein.png"))
+    frankenstein = pygame.transform.scale(frankenstein, (WIDTH / 4, HEIGHT / 1.8))
 
     # # powers
-    spawnBats = pygame.image.load(os.path.join(imgDir, "batspower.png"))
-    spawnBats = pygame.transform.scale(spawnBats, (dracula.get_width() * 2, dracula.get_height()))
+    clouds = pygame.image.load(os.path.join(imgDir, "clouds.png"))
+    clouds = pygame.transform.scale(clouds, (frankenstein.get_width() * 2, frankenstein.get_height()))
 
-    psychic = pygame.image.load(os.path.join(imgDir, "hypnosis.jpg"))
-    psychic = pygame.transform.scale(psychic, (dracula.get_width() * 2, dracula.get_height() * 0.5))
+    superspeed = pygame.image.load(os.path.join(imgDir, "superspeed.png"))
+    superspeed = pygame.transform.scale(superspeed, (frankenstein.get_width() * 2, frankenstein.get_height() * 0.5))
 
-    garlic = pygame.image.load(os.path.join(imgDir, "garlic.png"))
-    garlic = pygame.transform.scale(garlic, (player.img.get_width(), player.img.get_height() * 0.5))
+    insult = pygame.image.load(os.path.join(imgDir, "insult.png"))
+    insult = pygame.transform.scale(insult, (player.img.get_width(), player.img.get_height() * 0.5))
 
-    group = pygame.image.load(os.path.join(imgDir, "group.png"))
-    group = pygame.transform.scale(group, (player.img.get_width(), player.img.get_height() * 0.5))
+    ignore = pygame.image.load(os.path.join(imgDir, "ignore.png"))
+    ignore = pygame.transform.scale(ignore, (player.img.get_width(), player.img.get_height() * 0.5))
 
     # # move buttons and text
 
@@ -57,20 +57,20 @@ def func1(WIN, player):
     moveButton1 = Button(moveButton.get_width(), HEIGHT - moveButton.get_height(), moveButton)
     moveButton2 = Button(moveButton.get_width() * 2 + 10, HEIGHT - moveButton.get_height(), moveButton)
 
-    garlicTitle = item_font.render("Eastern Garlic", True, (255, 255, 255))
+    insultTitle = item_font.render("Insults", True, (255, 255, 255))
 
-    groupsTitle = item_font.render("Group Power", True, (255, 255, 255))
+    ignoreTitle = item_font.render("Ignore", True, (255, 255, 255))
 
-    enemy = Enemy(WIDTH - dracula.get_width(), HEIGHT - dracula.get_height(), dracula)  # dummy character create
-    enemy.powers = list([Power(spawnBats, "Spawn Bats", enemy.x, enemy.y, damage=35), Power(psychic, "Psychic", enemy.x, enemy.y)])
+    enemy = Enemy(WIDTH - frankenstein.get_width(), HEIGHT - frankenstein.get_height(), frankenstein)  # dummy character create
+    enemy.powers = list([Power(clouds, "Clouds", enemy.x, enemy.y, damage=35), Power(superspeed, "Super Speed", enemy.x, enemy.y)])
     player.powers = list(
-        [Power(garlic, "Eastern Garlic", player.x, player.y, damage=20), Power(group, "Group Power", player.x, player.y, damage=20)])
+        [Power(insult, "Insults", player.x, player.y, damage=20), Power(ignore, "Ignore", player.x, player.y, damage=20)])
 
     clock = pygame.time.Clock()  # keeps track of time of game
 
     def redraw_window(finish, w):
         # # created background
-        WIN.blit(bedroomImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
+        WIN.blit(outdoorImage, (0, 0))  # pygame uses 0,0 as top left to add surface on screen
         player.draw(WIN)
         enemy.draw(WIN)
 
@@ -143,7 +143,7 @@ def func1(WIN, player):
                 turn = False
             else:
                 moveButton1.draw(WIN)
-                WIN.blit(garlicTitle, (moveButton1.x + 50, moveButton1.y + 15))
+                WIN.blit(insultTitle, (moveButton1.x + 50, moveButton1.y + 15))
 
             if moveButton2.clicked:
                 player.shoot(1)
@@ -152,7 +152,7 @@ def func1(WIN, player):
                 turn = False
             else:
                 moveButton2.draw(WIN)
-                WIN.blit(groupsTitle, (moveButton2.x + 50, moveButton2.y + 15))
+                WIN.blit(ignoreTitle, (moveButton2.x + 50, moveButton2.y + 15))
         else:
             cooldownPlayer -= 1
 

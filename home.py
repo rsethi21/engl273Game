@@ -4,7 +4,7 @@ import os
 import sys
 from objects import Player, Enemy, Power
 from button import Button
-from dungeon import func2
+from outdoors import func2
 from bedroom import func1
 from scienceLab import func3
 
