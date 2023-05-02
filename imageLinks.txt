@@ -1,4 +1,4 @@
-Office:
+Bedroom:
 https://www.freepik.com/free-vector/cartoon-empty-kid-boy-bedroom-night_30971564.htm#query=bedroom%20night%20messy&position=19&from_view=search&track=ais
 Doors:
 https://www.freepik.com/free-vector/medieval-wooden-doors-stone-arch-old-house-castle-church-vector-cartoon-illustration-ancient-interior-with-brick-wall-wood-gates-with-golden-handle-hinges_22694628.htm#query=multiple%20doors%20animated%20dark&position=12&from_view=search&track=robertav1_2_sidr
@@ -38,6 +38,18 @@ Pyschic
 https://www.freepik.com/free-vector/flat-purple-swirl-background_35106323.htm#query=hypnosis%20animated&position=25&from_view=search&track=ais
 Choice Buttons:
 https://www.freepik.com/free-vector/set-8-orange-buttons_1128298.htm#query=blank%20buttons%20game&position=0&from_view=search&track=ais
+AI Robot:
+https://www.freepik.com/free-vector/robot-android-female-realistic-3d-composition-humanoid-robot-with-feminine-body-blank_6862965.htm#query=ai%20humanoid%20animated&position=3&from_view=search&track=ais
+Science Lab:
+https://www.freepik.com/free-vector/science-laboratory-room-chemical-experiments_27176442.htm#query=science%20lab&position=1&from_view=search&track=ais
+Objectification:
+https://www.freepik.com/free-photo/dictatorship-oppression-collage-concept_32080083.htm#query=puppet&position=0&from_view=search&track=sph
+Gas Lighting:
+https://www.freepik.com/free-vector/blue-flame-sticker-realistic-fire-image-vector-set_18702205.htm#query=gas%20lighting&position=4&from_view=search&track=ais
+Manipulate:
+https://www.freepik.com/free-vector/gaslighting-abstract-concept-vector-illustration-psychological-manipulation-method-mental-destabilization-cognitive-dissonance-creation-changing-beliefs-contradiction-abstract-metaphor_12469757.htm#query=manipulate&position=13&from_view=search&track=sph
+Outsmart:
+https://www.freepik.com/free-vector/chess-pieces-silhouettes_1069738.htm#query=chess&position=0&from_view=search&track=sph
 
 Remove background link:
 https://www.remove.bg/upload

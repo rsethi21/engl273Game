@@ -34,7 +34,7 @@ def func2(WIN, player):
 
     # # characters
     frankenstein = pygame.image.load(os.path.join(imgDir, "frankenstein.png"))
-    frankenstein = pygame.transform.scale(frankenstein, (WIDTH / 4, HEIGHT / 1.8))
+    frankenstein = pygame.transform.scale(frankenstein, (WIDTH / 4, HEIGHT / 1.35))
 
     # # powers
     clouds = pygame.image.load(os.path.join(imgDir, "clouds.png"))
@@ -47,7 +47,7 @@ def func2(WIN, player):
     insult = pygame.transform.scale(insult, (player.img.get_width(), player.img.get_height() * 0.5))
 
     ignore = pygame.image.load(os.path.join(imgDir, "ignore.png"))
-    ignore = pygame.transform.scale(ignore, (player.img.get_width(), player.img.get_height() * 0.5))
+    ignore = pygame.transform.scale(ignore, (player.img.get_width() * 2, player.img.get_height() * 0.5))
 
     # # move buttons and text
 

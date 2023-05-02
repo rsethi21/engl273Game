@@ -4,6 +4,7 @@ from button import Button
 from dialogue import Speech
 from objects import Player
 from home import main
+from endScene import finale
 
 # basically create background and characters and list of text from NPC sequrntially released by user next button
 
@@ -19,6 +20,7 @@ def story(WIN):
     HEIGHT = WIN.get_height()
     imgDir = "gameImages"
     title_font = pygame.font.SysFont("comicsans", 40)
+    player = None
 
     # load images
     doorImage = pygame.image.load(os.path.join(imgDir, "doors.jpg"))
@@ -94,29 +96,34 @@ def story(WIN):
 
             if option1.clicked:
                 index += 1
+                player = player1
                 main(WIN, player1)
             else:
                 option1.draw(WIN)
 
             if option2.clicked:
                 index += 1
+                player = player2
                 main(WIN, player2)
             else:
                 option2.draw(WIN)
 
             if option3.clicked:
                 index += 1
+                player = player3
                 main(WIN, player3)
             else:
                 option3.draw(WIN)
 
             if option4.clicked:
                 index += 1
+                player = player4
                 main(WIN, player4)
             else:
                 option4.draw(WIN)
 
         else:
+            finale(WIN, player)
             run = False
 
         pygame.display.update()

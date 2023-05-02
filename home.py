@@ -60,7 +60,7 @@ def main(WIN, player):
         WIN.blit(lives_label, (0, 0))
 
         if finish:
-            finished_label = end_font.render("To be continued...?!?", True, (255, 0, 0))
+            finished_label = end_font.render("Contacting the Butler...", True, (255, 0, 0))
             WIN.blit(finished_label,
                      (0.5 * WIDTH - 0.5 * finished_label.get_width(), 0.5 * HEIGHT - 0.5 * finished_label.get_height()))
 
