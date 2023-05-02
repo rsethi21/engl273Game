@@ -46,51 +46,51 @@ This game is created for eudcational purposes only and will not be commercialize
 # Powers
 - Bats:
   - Link: https://www.freepik.com/free-vector/bats-swarm-isolated-vector-halloween-transparent-background-halloween-traditional-design-element_17561970.htm#query=bats%20animated&position=24&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/bats-swarm-isolated-vector-halloween-transparent-background-halloween-traditional-design-element_17561970.htm#query=bats%20animated&position=24&from_view=search&track=ais">Image by hannazasimova</a> on Freepik
 
 - Insult:
   - Link: https://www.freepik.com/free-vector/comic-speech-bubble-with-ha-ha-text_13576389.htm#query=word%20whatever%20animated&position=49&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/comic-speech-bubble-with-ha-ha-text_13576389.htm#query=word%20whatever%20animated&position=49&from_view=search&track=ais">Image by brgfx</a> on Freepik
 
 - Garlic:
   - Link: https://www.freepik.com/free-vector/garlic-food-sketch-hand-drawn-vector_28796256.htm#query=garlic%20bunch%20animated&position=37&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/garlic-food-sketch-hand-drawn-vector_28796256.htm#query=garlic%20bunch%20animated&position=37&from_view=search&track=ais">Image by chikenbugagashenka</a> on Freepik
 
 - Power of Group:
   - Link: https://www.freepik.com/free-vector/illustration-diverse-people-arms-around-each-other_2921066.htm#query=group&position=23&from_view=search&track=sph
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/illustration-diverse-people-arms-around-each-other_2921066.htm#query=group&position=23&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
 
 - Ignore:
   - Link: https://www.freepik.com/free-vector/he-has-his-head-sand-beach-background_4382377.htm#query=head%20in%20the%20sand%20animated&position=0&from_view=search&track=ais
-  - Attribution:
+  - Attribution: <a href="https://www.freepik.com/free-vector/he-has-his-head-sand-beach-background_4382377.htm#query=head%20in%20the%20sand%20animated&position=0&from_view=search&track=ais">Image by brgfx</a> on Freepik
 
 - Speed:
   - Link: https://www.freepik.com/free-vector/background-neon-lights_7090220.htm#query=super%20speed&position=47&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/background-neon-lights_7090220.htm#query=super%20speed&position=47&from_view=search&track=ais">Image by pikisuperstar</a> on Freepik
 
 - Shadow:
   - Link: https://www.freepik.com/free-vector/dark-gray-clouds-background-papercut-style_9191625.htm#query=dark%20clouds%20animated&position=0&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/dark-gray-clouds-background-papercut-style_9191625.htm#query=dark%20clouds%20animated&position=0&from_view=search&track=ais">Image by starline</a> on Freepik
 
 - Pyschic
   - Link: https://www.freepik.com/free-vector/flat-purple-swirl-background_35106323.htm#query=hypnosis%20animated&position=25&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: Image by <a href="https://www.freepik.com/free-vector/flat-purple-swirl-background_35106323.htm#query=hypnosis%20animated&position=25&from_view=search&track=ais">Freepik</a>
 
 - Objectification:
   - Link: https://www.freepik.com/free-photo/dictatorship-oppression-collage-concept_32080083.htm#query=puppet&position=0&from_view=search&track=sph
-  - Attribution: 
+  - Attribution: Image by <a href="https://www.freepik.com/free-photo/dictatorship-oppression-collage-concept_32080083.htm#query=puppet&position=0&from_view=search&track=sph">Freepik</a>
 
 - Gas Lighting:
   - Link: https://www.freepik.com/free-vector/blue-flame-sticker-realistic-fire-image-vector-set_18702205.htm#query=gas%20lighting&position=4&from_view=search&track=ais
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/blue-flame-sticker-realistic-fire-image-vector-set_18702205.htm#query=gas%20lighting&position=4&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
 
 - Manipulate:
   - Link: https://www.freepik.com/free-vector/gaslighting-abstract-concept-vector-illustration-psychological-manipulation-method-mental-destabilization-cognitive-dissonance-creation-changing-beliefs-contradiction-abstract-metaphor_12469757.htm#query=manipulate&position=13&from_view=search&track=sph
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/gaslighting-abstract-concept-vector-illustration-psychological-manipulation-method-mental-destabilization-cognitive-dissonance-creation-changing-beliefs-contradiction-abstract-metaphor_12469757.htm#query=manipulate&position=13&from_view=search&track=sph">Image by vectorjuice</a> on Freepik
 
 - Outsmart:
   - Link: https://www.freepik.com/free-vector/chess-pieces-silhouettes_1069738.htm#query=chess&position=0&from_view=search&track=sph
-  - Attribution: 
+  - Attribution: <a href="https://www.freepik.com/free-vector/chess-pieces-silhouettes_1069738.htm#query=chess&position=0&from_view=search&track=sph">Image by kubanek</a> on Freepik
 
 # Buttons
 - Choice Buttons:
